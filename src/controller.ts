@@ -17,7 +17,9 @@ res.send("muco burda mı bak biii")
 ) => void;
 
 
-type Controller = Record <string,ControllerMethod>;
+type Controller = Record <"Hello World" | "Hello Test!",ControllerMethod>;  
+
+//Yukarıka bulunan kısımda string  yazabilirdik fakat öneri olarak index.ts dosyamızda çıkmazdı fakat bu şekilde belirttiğimizde indexçts dosyamızda öneri olarak alabiliriz.
 
 
 export const TestController:Controller= {
@@ -27,7 +29,7 @@ export const TestController:Controller= {
         },
 
     testEndp (req, res, next) {
-        res.send("muco burda mı bak biii");
+        res.send("Hello Test!");
     },
 } */
 
