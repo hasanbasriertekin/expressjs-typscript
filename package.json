@@ -1,0 +1,22 @@
+{
+  "name": "expressjs-typescript",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "type": "module",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "typescript": "^5.8.2"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start-js": "node dist/index.js",
+    "start": "tsx src/index.ts",
+    "dev": "tsx watch src/index.ts"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.13.16",
+    "tsx": "^4.19.3"
+  }
+}
