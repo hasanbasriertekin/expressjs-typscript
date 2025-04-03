@@ -1,5 +1,19 @@
 import { NextFunction, Request, Response } from "express";
 
+
+
+export class TestController {
+   
+   static helloWorld ( req:Request, res:Response, next:NextFunction) {
+        res.send("Hello World")
+        };
+
+   static testEndp ( req:Request,res:Response,next:NextFunction) {
+        res.send("muco burda mı bak biii");
+    };
+}
+
+
 /* export function helloWorld (req:Request,res:Response,next:NextFunction) {
 res.send("Hello World")
 };
@@ -34,13 +48,3 @@ export const TestController:Controller= {
 } */
 
 
-export const TestController= {
-   
-    helloWorld ( req:Request, res:Response, next:NextFunction) {
-        res.send("Hello World")
-        },
-
-    testEndp ( req:Request,res:Response,next:NextFunction) {
-        res.send("muco burda mı bak biii");
-    },
-}
